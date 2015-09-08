@@ -70,6 +70,7 @@ endif
 
 
 colo molokai
+"colo delek
 
 set encoding=utf-8
 set fenc=cp936
@@ -83,6 +84,9 @@ set nobomb
 "fold
 set foldmethod=syntax
 set nofoldenable
+
+" nerd tree
+map <C-m> :NERDTreeToggle<CR>
 
 "powerline
 let g:Powerline_symbols = 'fancy'
