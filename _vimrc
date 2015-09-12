@@ -36,7 +36,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'daylerees/colour-schemes'
-Plugin 'powerline/powerline'
+"Plugin 'powerline/powerline'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,9 +65,7 @@ set autoindent
 set cindent
 set clipboard=unnamed
 
-if has("gui_running")
-	set guifont=Monaco:h13
-endif
+set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 
 
 colo molokai
@@ -89,4 +88,28 @@ set nofoldenable
 map <C-m> :NERDTreeToggle<CR>
 
 "powerline
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
+
+" edit
+set clipboard+=unnamed
+
+let mapleader=','
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
+" easymotion
+let g:EasyMotion_leader_key = 'f'
+
+" ctrlp
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=60 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.iml,*.jar,*.class,*.pyc
+
+" airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_detect_modified=1
+let g:airline_detect_iminsert=0
