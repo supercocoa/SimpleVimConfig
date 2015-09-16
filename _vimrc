@@ -39,6 +39,24 @@ Plugin 'daylerees/colour-schemes'
 "Plugin 'powerline/powerline'
 Plugin 'bling/vim-airline'
 
+" js mode
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'wavded/vim-stylus'
+Plugin 'moll/vim-node'
+
+" rails mode
+Plugin 'tpope/vim-rails'
+
+" lua mode
+"Plugin 'xolox/vim-lua-ftplugin'
+
+" golang mode
+Plugin 'fatih/vim-go'
+
+" ag
+Plugin 'rking/ag.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
