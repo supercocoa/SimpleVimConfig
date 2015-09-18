@@ -30,6 +30,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 ""
 " original repos on github
 Plugin 'kien/ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomasr/molokai'
 Plugin 'scrooloose/nerdtree'
@@ -125,6 +126,12 @@ let g:EasyMotion_leader_key = 'f'
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=60 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.iml,*.jar,*.class,*.pyc
+
+" ctrlp-funky
+map <C-o> :CtrlPFunky<Cr>
+map <C-g> :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrlp_funky_syntax_highlight = 1
+let g:ctrlp_extensions = ['funky']
 
 " airline
 set laststatus=2
