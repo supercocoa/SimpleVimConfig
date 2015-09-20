@@ -129,9 +129,12 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.iml,*.jar,*.class,*.pyc
 
 " ctrlp-funky
 map <C-o> :CtrlPFunky<Cr>
-map <C-g> :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+" map <C-g> :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 let g:ctrlp_funky_syntax_highlight = 1
 let g:ctrlp_extensions = ['funky']
+
+" ag
+map <C-g> :Ag<Cr>
 
 " airline
 set laststatus=2
