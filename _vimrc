@@ -62,6 +62,15 @@ Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+" html mode
+Plugin 'mattn/emmet-vim'
+
+" xml mode
+Plugin 'vim-scripts/xml.vim'
+
+" gradle mode
+Plugin 'vim-scripts/vim-gradle'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -116,7 +125,8 @@ map <C-m> :NERDTreeToggle<CR>
 " edit
 set clipboard+=unnamed
 
-let mapleader=','
+let mapleader='space'
+let maplocalleader = ","
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
 map <leader>ew :e %%
 map <leader>es :sp %%
