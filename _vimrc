@@ -65,11 +65,8 @@ Plugin 'plasticboy/vim-markdown'
 " html mode
 Plugin 'mattn/emmet-vim'
 
-" xml mode
-Plugin 'vim-scripts/xml.vim'
-
 " gradle mode
-Plugin 'vim-scripts/vim-gradle'
+Plugin 'tfnico/vim-gradle'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -115,6 +112,7 @@ set nobomb
 "fold
 set foldmethod=syntax
 set nofoldenable
+let g:xml_syntax_folding=1
 
 " nerd tree
 map <C-m> :NERDTreeToggle<CR>
@@ -125,8 +123,8 @@ map <C-m> :NERDTreeToggle<CR>
 " edit
 set clipboard+=unnamed
 
-let mapleader='space'
-let maplocalleader = ","
+let mapleader=','
+" let maplocalleader = ","
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
 map <leader>ew :e %%
 map <leader>es :sp %%
