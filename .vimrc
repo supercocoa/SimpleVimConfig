@@ -33,6 +33,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomasr/molokai'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'easymotion/vim-easymotion'
@@ -96,8 +97,8 @@ set clipboard=unnamed
 
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 
-
-colo molokai
+colo dracula
+"colo molokai
 "colo delek
 
 set encoding=utf-8
