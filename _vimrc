@@ -32,9 +32,24 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'kien/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 "Plugin 'Valloric/YouCompleteMe'
+
+" theme
 Plugin 'tomasr/molokai'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'geoffharcourt/one-dark.vim'
+Plugin 'petelewis/vim-evolution'
+Plugin 'wellsjo/wellsokai.vim'
+Plugin 'mkarmona/colorsbox'
+Plugin 'Haron-Prime/Antares'
+Plugin 'Haron-Prime/evening_vim'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'chriskempson/base16-vim'
+
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'daylerees/colour-schemes'
@@ -49,17 +64,20 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'wavded/vim-stylus'
 Plugin 'moll/vim-node'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'hail2u/vim-css3-syntax'
 
 " rails mode
 Plugin 'tpope/vim-rails'
 
 " lua mode
-"Plugin 'xolox/vim-lua-ftplugin'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-lua-ftplugin'
 
 " golang mode
 Plugin 'fatih/vim-go'
+
+" erlang mode
+Plugin 'jimenezrick/vimerl'
 
 " ag
 Plugin 'rking/ag.vim'
@@ -104,9 +122,12 @@ set clipboard=unnamed
 
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 
-colo dracula
+"colo dracula
 "colo molokai
 "colo delek
+"colo onedark
+"colo base16-greenscreen
+colo evening
 
 set encoding=utf-8
 set fenc=cp936
@@ -124,6 +145,7 @@ let g:xml_syntax_folding=1
 
 " nerd tree
 map <C-m> :NERDTreeToggle<CR>
+let g:nerdtree_tabs_open_on_gui_startup=0
 
 "powerline
 "let g:Powerline_symbols = 'fancy'
