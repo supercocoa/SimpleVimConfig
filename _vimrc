@@ -41,11 +41,16 @@ Plugin 'daylerees/colour-schemes'
 "Plugin 'powerline/powerline'
 Plugin 'bling/vim-airline'
 
+" c++ mode
+Plugin 'Mizuchi/STL-Syntax'
+
 " js mode
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'wavded/vim-stylus'
 Plugin 'moll/vim-node'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'hail2u/vim-css3-syntax'
 
 " rails mode
 Plugin 'tpope/vim-rails'
@@ -91,8 +96,10 @@ set showmatch
 set hls
 set cursorline
 set t_Co=256  
-set autoindent
-set cindent
+set sw=4
+set ts=4
+filetype indent on
+autocmd FileType python setlocal et sta sw=4 sts=4
 set clipboard=unnamed
 
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13
