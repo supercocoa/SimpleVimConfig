@@ -55,6 +55,12 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'daylerees/colour-schemes'
 "Plugin 'powerline/powerline'
 Plugin 'bling/vim-airline'
+Plugin 'honza/vim-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'justinj/vim-react-snippets'
+
 
 " c++ mode
 Plugin 'Mizuchi/STL-Syntax'
