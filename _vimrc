@@ -98,6 +98,9 @@ Plugin 'mattn/emmet-vim'
 " gradle mode
 Plugin 'tfnico/vim-gradle'
 
+" table mode
+Plugin 'dhruvasagar/vim-table-mode'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -126,7 +129,9 @@ filetype indent on
 autocmd FileType python setlocal et sta sw=4 sts=4
 set clipboard=unnamed
 
-set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+"set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+set guifont=Monaco:h13
+
 
 "colo dracula
 "colo molokai
@@ -136,8 +141,8 @@ set guifont=Source\ Code\ Pro\ for\ Powerline:h13
 colo evening
 
 set encoding=utf-8
-set fenc=cp936
-set fileencodings=cp936,ucs-bom,utf-8
+set fenc=utf8 "new file encoding
+set fileencodings=ucs-bom,utf-8,cp936 "encoding path
 
 if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
 	set ambiwidth=double
@@ -186,6 +191,9 @@ map <C-g> :Ag<Cr>
 
 " airline
 set laststatus=2
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=0 
 let g:airline_detect_modified=1
 let g:airline_detect_iminsert=0
+
+" table mode
+let g:table_mode_corner="|"
